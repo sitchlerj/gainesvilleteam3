@@ -1,0 +1,59 @@
+Census Tract,Neighborhood,Total,FB,FB_Nat,FB_Nat_Europe,FB_Nat_Asia,FB_Nat_Africa,FB_Nat_Oceania,FB_Nat_Latin _America,FB_Nat_North_America,FB_NC,FB_NC_Europe,FB_NC_Asia,FB_NC_Africa,FB_NC_Oceania,FB_NC_Latin_America,FB_NC_North_ America
+CT10,"University Park, Raintree, Mason Manor, Ridgewood, Black Acres, Hibiscus Park, University Village, Golfview, Woodland Terrace","6,825",494,330,66,107,14,0,143,0,164,0,134,0,0,30,0
+CT11,"Monterey, The Valley, Pebble Creek, Wood Creek, Madison Park, Willowcroft, Shadow Lawn Estates, Las Pampas, Chatworth Court, Edgewood Hills, The Meadows, Brywood, Maple Hill, Forest Ridge, Colony Park, Hermitage, Featherwood, Coventry, Royal Gardens, Fox Grove, Rock Creek","6,970",822,748,88,473,8,0,133,46,74,0,38,28,0,8,0
+CT1108,"Madera, Idyllwild","2,196",270,252,28,54,60,0,104,6,18,0,18,0,0,0,0
+CT12.01,"Foxfire Woods, Capri, Pinebreeze, Sable Chase, Wimberly Estates, Breckenridge","2,928",147,57,0,55,0,0,2,0,90,31,47,0,0,0,12
+CT12.02,"Abbington Oaks, Creekwood, Sorrento, Rainbow's End, Hazel Heights, Palmetto Woods, Ridgeview, Palm Grove, Hidden Pines, Chateau Forest, Hidden Oaks, Forest of the Unicorn, Cherrytree, Rainbows East, Springtree, Northwood","7,736",586,466,67,160,0,0,239,0,120,0,67,0,0,53,0
+CT12.03,"Ridgeview, Hazel Heights","3,839",805,239,149,60,0,8,22,0,566,90,44,353,6,30,43
+CT14,,"4,050",142,84,13,6,0,0,65,0,58,5,0,0,0,38,15
+CT15.14,NA,"1,926",341,121,24,65,0,6,26,0,220,21,103,72,0,17,7
+CT15.15,Phoenix,"5,719","1,130",555,0,255,0,0,300,0,575,0,352,0,0,223,0
+CT15.16,NA,"2,877",231,45,0,33,0,0,12,0,186,93,65,0,0,28,0
+CT15.17,Napier Oaks,"5,454","1,137",467,18,154,0,0,295,0,670,0,634,16,0,20,0
+CT15.19,NA,"2,126",886,188,14,151,0,0,23,0,698,29,518,0,0,151,0
+CT15.22,NA,"7,056","1,444",438,156,61,102,0,119,0,"1,006",237,145,0,0,624,0
+CT16.05,"Woodland Terrace, Sugarfoot, Mill Pond, Beville Heights, Durant Estates","8,890","1,727",775,110,284,0,0,268,113,952,100,188,206,0,437,21
+CT17.01,,"6,500","1,057",883,126,303,21,0,293,140,174,90,33,0,0,51,0
+CT17.02,"Suburban Heights, Kingswood Court, Hillcrest, Landmark Woods, Westmoreland Estates, Northwest Estates, Libby Heights","5,440",426,243,31,25,44,0,143,0,183,47,19,0,0,81,36
+CT18.02,NA,"3,460",73,64,0,0,0,0,64,0,9,0,0,0,0,9,0
+CT18.03,"Turkey Creek Forest, Millhopper Station, Mile Run, Sutter's Landing, Rosemont, Appletree, Northwood Oaks, Northwood Pines, Pinderidge","6,618",996,838,100,137,0,0,578,23,158,21,40,0,0,97,0
+CT18.11,Kensington Park,"6,974","1,186",566,91,212,0,13,235,15,620,38,117,0,9,456,0
+CT18.13,"Ashton, Burberry Ponds, Westchester, Sterling Place, The Garden, Blues Creek","4,219",575,374,117,177,7,0,73,0,201,37,102,11,0,51,0
+CT18.15,notgnv,"1,897",123,93,0,0,0,0,93,0,30,0,0,0,0,30,0
+CT18.16,notgnv,"5,641",393,284,0,100,1,0,120,63,109,23,21,0,0,65,0
+CT18.17,notgnv,"4,860",334,298,91,49,0,0,113,45,36,0,36,0,0,0,0
+CT18.18,notgnv,"5,187",441,183,16,26,0,0,141,0,258,17,0,0,0,241,0
+CT18.19,notgnv,"4,478",169,107,19,19,8,0,61,0,62,16,0,0,0,18,28
+CT19.02,"Ironwood, Lamplighter","3,816",282,203,0,60,0,0,143,0,79,0,22,0,0,44,13
+CT19.07,,"2,433",83,66,0,12,0,0,54,0,17,17,0,0,0,0,0
+CT19.08,Hidden Lake,"5,259",223,46,14,14,0,0,0,18,177,94,49,0,0,34,0
+CT2.01,"Pleasant Street, Fifth Ave","5,187",715,281,42,27,0,0,212,0,434,37,32,0,0,242,123
+CT2.02,"Porters, Downtown","5,897",226,56,0,47,0,0,9,0,170,7,23,31,0,109,0
+CT20.01,,"1,402",48,10,0,0,0,0,10,0,38,0,38,0,0,0,0
+CT20.02,,"3,988",142,67,47,0,0,0,20,0,75,17,14,0,0,38,6
+CT21.01,notgnv,"1,961",64,27,9,3,6,0,3,6,37,4,2,7,0,24,0
+CT21.02,notgnv,904,49,1,0,0,0,0,1,0,48,26,22,0,0,0,0
+CT22.01,notgnv,"6,390",520,430,44,201,0,0,185,0,90,12,16,0,0,48,14
+CT22.02,notgnv,"6,438",188,170,33,93,0,0,44,0,18,18,0,0,0,0,0
+CT22.04,notgnv,"12,195","1,907","1,211",244,672,39,18,166,72,696,107,372,0,0,217,0
+CT22.07,NA,"3,738",576,423,35,83,43,0,261,1,153,22,125,0,0,6,0
+CT22.08,notgnv,"3,091",332,204,101,65,0,0,38,0,128,0,105,0,0,23,0
+CT22.09,notgnv,"8,419",986,583,107,322,0,0,125,29,403,93,160,0,0,131,19
+CT22.10,notgnv,"5,596",664,281,61,100,0,0,120,0,383,22,0,0,0,346,15
+CT22.17,notgnv,"5,877",320,195,148,18,0,0,29,0,125,47,0,0,0,78,0
+CT22.18,Grand Oaks,"2,606",487,344,0,107,23,0,214,0,143,0,107,0,0,36,0
+CT22.19,NA,"7,064","1,381",556,26,109,59,0,362,0,825,105,322,155,0,243,0
+CT22.20,"Oaks Preserve, Finley Woods","2,840",507,277,68,36,0,0,134,39,230,0,12,0,0,218,0
+CT22.21,notgnv,"5,535","1,165",658,61,524,0,0,73,0,507,0,409,0,0,98,0
+CT22.22,notgnv,"7,173","1,160",892,209,497,0,0,186,0,268,29,192,0,0,47,0
+CT3.01,"Oakview, Grove Street, Pine Park, Gateway Park","3,703",213,199,46,15,0,0,138,0,14,0,0,0,0,14,0
+CT3.02,Stephen Foster,"2,500",199,138,36,8,0,0,94,0,61,0,43,0,0,18,0
+CT4,"P&G Neighborhood, Carol Estates South, Highland Court Manor, Debra Heights","5,736",263,132,0,23,0,0,109,0,131,0,118,13,0,0,0
+CT5,"Springhill, Downtown, Duckpond, Northeast Neighbors, Pleasant Street, P&G Neighborhood, Greater Northeast Community","5,115",340,263,67,67,104,0,25,0,77,18,0,16,24,19,0
+CT6,"Duval, Cedar Grove II","4,896",19,19,0,12,0,0,7,0,0,0,0,0,0,0,0
+CT7,"Sugarhill, Southeast Evergreen Trails, Lincoln Estates, Azalea Trails, North Lincoln Heights, Springhill","6,821",336,219,0,0,0,0,205,14,117,0,0,15,0,24,78
+CT8.06,NA,"3,505",711,97,14,14,9,0,60,0,614,19,489,0,0,90,16
+CT8.08,"Kirkwood, Colclough Hills","4,041",419,145,19,31,0,0,95,0,274,93,139,42,0,0,0
+CT8.09,NA,"1,566",272,177,41,47,0,0,89,0,95,22,58,15,0,0,0
+CT9.01,Golfview,"3,583",545,124,36,16,0,5,67,0,421,122,170,0,0,79,50
+CT9.02,University Park,"8,610",861,335,18,59,18,7,233,0,526,135,301,0,0,59,31
