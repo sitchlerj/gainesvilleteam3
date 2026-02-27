@@ -49,20 +49,25 @@ v) Geographical Files
 Details for i) U. S. Census Bureau/ACS Data by location
 ---------------------------------------
 Description: 
+
 Format(s): .csv, .xlsx
+
 -computer_internet_vehicles.csv: Census Tracts as column names, rows as count data for the variables below (stratified by level), more variables than needed just in case. This is a compiled dataset from where we are pulling individual variables and cleaning separately.
+		
 		Relevant Sections:
  		 * COMPUTERS_AND_INTERNET_USE
  		 * TYPES OF COMPUTER
   		 * TYPES OF INTERNET SUBSCRIPTION
 		 * VEHICLES AVAILABLE 
 -c_t_sheet_1.csv: Alachua County Census Tracts as row names, columns for counts of the foreign-born population per tract (separated by the continent of origin for the foreign-born people)
+		
 		Relevant Variables:
 		* Total: total population of the corresponding tract
 		* FB: total foreign-born population of the corresponding tract
 		* FB_Nat: total naturalized foreign-born population of the corresponding tract
 		* FB_NC: total non citizen foreign-born population of the corresponding tract
 -foreign_born_zip_codes.csv: Variables as row names and columns as the ZCTA values of Gainesville, excluding the UF ZIP codes
+		
 		Relevant Variables:
 		* Europe: total foreign-born population in the corresponding ZCTA originally 
 		from Europe
@@ -73,10 +78,12 @@ Format(s): .csv, .xlsx
 		*Other: total foreign-born population in the corresponding ZCTA 
 		originally from Africa, Oceana, or North America
 -internet_coverage_zip_codes.csv: Variables are Zip Code and Percent Internet Coverage as columns
+		
 		Relevant Variables:
 		*Zip Code: There are 10 ZIP codes listed, for the 10 ZTCA values of Gainesville, excluding UF
 		*Percent Internet Coverage: This is the percentage of households in the corresponding ZCTA that have an internet subscription or have internet access 
 -computer_broadband.xlsx: Columns are Census Tracts in all of Alachua County, not just Gainesville CCD, and it tells us the number of households, the number of households with a computer, and the number of households with an internet subscription
+		
 		Relevant Variables:
 		*Total_households: The total number of households in the corresponding Census tract
 		*With_a_computer: The total number of households in the corresponding Census tract with at least one computer
@@ -84,23 +91,26 @@ Format(s): .csv, .xlsx
 
 Details for ii) R Scripts
 ---------------------------------------
-Includes the R-code to run Bonferroni tests for significant differences, ANOVA, and a logistic regression.
-*Description:  These files have the codes to our current exploratory data analyses, finding significant differences between tracts using a Bonferroni method. This is currently in progress, and we will update this file to provide the most accurate analyses it has completed.
+Includes the R-code to run Bonferroni tests for significant differences, ANOVA, and a logistic regression. These files have the codes to our current exploratory data analyses, finding significant differences between tracts using a Bonferroni method. This is currently in progress, and we will update this file to provide the most accurate analyses it has completed.
+
 *Format(s): .Rmd
   
 Details for iii) Python Scripts
 ---------------------------------------
 Includes the Python code to replicate the maps of Gainesville.
-Format(s): .ipynb
+
+*Format(s): .ipynb
 
 Details for iv) HTML Scripts (Maps)
 ---------------------------------------
 The Python code outputs HTML maps.
-Format(s): .html
+
+*Format(s): .html
 
 Details for v) Geographical Files
 ---------------------------------------
-*Description: These files include data for the map to have features such as locations (for libraries), Gainesville city borders, Census Tract borders, ZIP Code Tabulation Areas, RTS bus routes, and RTS bus stops.
+These files include data for the map to have features such as locations (for libraries), Gainesville city borders, Census Tract borders, ZIP Code Tabulation Areas, RTS bus routes, and RTS bus stops.
+
 *Format(s): .csv, .cpg, .dbf, .prj, .sbn, .sbx, .shp, shp.xml, .shx
 
 
