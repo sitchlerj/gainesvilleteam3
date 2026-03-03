@@ -140,20 +140,20 @@ Data on geographical features was extracted from the following sources:
 
 Code is provided for R version 4.5.1 (2025-06-13)
 
-Package ‘readxl’ version 1.4.5
-Package ‘tidyr’ version 1.3.1
-Package ‘stringr’ version 1.5.2
-Package ‘dplyr’ version 1.5.2
-Package ‘emmeans’ version 2.0.1
+- Package ‘readxl’ version 1.4.5
+- Package ‘tidyr’ version 1.3.1
+- Package ‘stringr’ version 1.5.2
+- Package ‘dplyr’ version 1.5.2
+- Package ‘emmeans’ version 2.0.1
 
 Code is provided for Python version 3.12.12
 
-Package ‘pandas’ version 2.2.2
-Package ‘folium’ version 0.20.0
-Package ‘geopandas’ version 1.1.2
-Package ‘requests’ version 2.32.4
-Package ‘shapely.geometry’ version 2.1.2
-Package ‘google.colab’ version 1.0.0
-Package ‘branca’ version 0.8.2
+- Package ‘pandas’ version 2.2.2
+- Package ‘folium’ version 0.20.0
+- Package ‘geopandas’ version 1.1.2
+- Package ‘requests’ version 2.32.4
+- Package ‘shapely.geometry’ version 2.1.2
+- Package ‘google.colab’ version 1.0.0
+- Package ‘branca’ version 0.8.2
 - - -
 END OF README
