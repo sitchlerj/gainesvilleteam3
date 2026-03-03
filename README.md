@@ -1,4 +1,4 @@
-# gainesvilleteam3
+# City of Gainesville Team 3
 Team 3 Digital Access Datasets
 - - - 
 The data we are using includes foreign born populations, computer ownership, internet subscriptions, bus routes, and vehicles per household, to name a few. We downloaded various .csv files from the Census Bureau and then cleaned the data by changing variable names, removing redundant columns, consolidating multiple reports into one data set, and confirming all geographical identifications are consistent. The data we cleaned was filtered by Alachua County census tracts with the exception of internet access which was converted to zip codes of Gainesville City. 
