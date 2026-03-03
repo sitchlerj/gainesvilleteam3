@@ -24,6 +24,7 @@ i)  U. S. Census Bureau/ACS Data by location
 
 ii) R Scripts
 - proportion_of_households_with_computers_per_tract.Rmd
+- proportions_for_computers_and_internet_access_for_household_per_tract.Rmd
 
 iii) Python Scripts
 - gainesville_comprehensive_map.ipynb
