@@ -31,7 +31,7 @@ iii) Python Scripts
 - internet_coverage_zip_code.csv
 
 iv) HTML Scripts (Maps)
-- comprehensive_gnv_map.html
+- gainesville_comprehensive_map.html
 - internet_coverage_map.html
 
 v) Geographical Files
@@ -115,7 +115,7 @@ These files include data for the map to have features such as locations (for lib
 *Format(s): .csv, .cpg, .dbf, .prj, .sbn, .sbx, .shp, shp.xml, .shx
 
 
-##Sharing/Access information
+Sharing/Access information
 ======================
 
 Data on digital access was extracted from the following sources:
