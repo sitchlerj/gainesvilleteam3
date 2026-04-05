@@ -7,7 +7,7 @@ Currently, we are using these data sets to run T-tests in R. Our hope is to dete
 
 We produced our first prototype of an interactive map, using the cleaned data sets, which layered bus routes with foreign born population by census tracts. After doing some research on the resources that were available to Gainesville residents, we decided to include library locations on this map. We noticed from this inclusion that the Millhopper Branch, which has the most foot traffic, was located in areas densely populated by foreign-born residents. Our map, titled “Comprehensive Gainesville Map”, includes toggle options for bus routes + spots, libraries, city limits, populations, and census tracts. We expect to add elements to reflect vehicles per household and potentially computer access  We created this visualization using existing shapefiles and trajectories taken from both the City of Gainesville official website and the U.S. Census Bureau.
 
-All analyses were conducted in R and all visualizations were created in Python. The file "proportion_of_households_with_computers_per_tract.Rmd" includes all code required to replicate our analyses, "internet_access_zip_code.ipynp" includes the code to replicate the internet_coverage.html map, and "gainesville_comprehensive_map.ipynb" includes the code to replicate the comprehensive_gnv_map.html map.
+All analyses were conducted in R and all visualizations were created in Google Colab, using mostly Python, but also some HTML and JavaScript. The file "proportion_of_households_with_computers_per_tract.Rmd" includes all code required to replicate our analyses, "internet_access_zip_code.ipynp" includes the code to replicate the internet_coverage.html map, and "gainesville_comprehensive_map.ipynb" includes the code to replicate the comprehensive_gnv_map.html map.
 - - -
 Data and File Overview
 ======================
@@ -26,7 +26,7 @@ ii) R Scripts
 - proportion_of_households_with_computers_per_tract.Rmd
 - proportions_for_computers_and_internet_access_for_household_per_tract.Rmd
 
-iii) Python Scripts
+iii) Google Colab Scripts
 - gainesville_comprehensive_map.ipynb
 - internet_coverage_zip_code.csv
 
@@ -96,9 +96,9 @@ Includes the R-code to run Bonferroni tests for significant differences, ANOVA, 
 
 *Format(s): .Rmd
   
-Details for iii) Python Scripts
+Details for iii) Google Colab Scripts
 ---------------------------------------
-Includes the Python code to replicate the maps of Gainesville.
+Includes the Python, JavaScript, and HTML code to replicate the maps of Gainesville.
 
 *Format(s): .ipynb
 
