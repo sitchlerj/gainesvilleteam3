@@ -153,7 +153,6 @@ Data on geographical features was extracted from the following sources:
 - https://data.cityofgainesville.org/Geospatial-Maps-/Bus-Stops/kxwd-siv3
 - https://catalog.data.gov/dataset/tiger-line-shapefile-2022-nation-u-s-2020-census-5-digit-zip-code-tabulation-area-zcta5/resource/1f3037ff-283c-40ac-9018-2de80e343f69
 - https://go-rts.com/rts-data/
-- https://experience.arcgis.com/experience/23f2a92f6f814f94b919a6e964233329
 - https://fgdl.org/zips/metadata/xml/par_citylm_2021.xml
 - GIS Specialist Juan Villa via the Department of Sustainable Development at the City of Gainesville
 
