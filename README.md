@@ -16,23 +16,22 @@ Data and File Overview
 This dataset contains 4 types of files: 
 
 i)  U. S. Census Bureau/ACS Data by location
-- computer_internet_vehicles.csv
+- vehicles.csv
 - c_t_sheet_1.csv
-- foreign_born_zip_codes.csv
-- internet_coverage_zip_codes.csv
-- computer_broadband.xlsx
+- prop_computer_internet_household.csv
+- with_mortgage.csv
+- no_mortgage.csv
+- newhousingdata.csv
 
 ii) R Scripts
 - proportion_of_households_with_computers_per_tract.Rmd
 - proportions_for_computers_and_internet_access_for_household_per_tract.Rmd
 
 iii) Google Colab Scripts
-- gainesville_comprehensive_map.ipynb
-- internet_coverage_zip_code.csv
-
+- current_gnv_comp_map.ipynb
+  
 iv) HTML Scripts (Maps)
-- gainesville_comprehensive_map.html
-- internet_coverage_map.html
+- current_gnv_comprehensive_map.html
 
 v) Geographical Files
 - aclib.csv
@@ -46,20 +45,23 @@ v) Geographical Files
 - Spring2026_Weekday.dbf
 - par_citylm_2021.shp
 - par_citylm_2021.dbf
+- city_commission_district.shp
+- city_commission_district.dbf
 
 Details for i) U. S. Census Bureau/ACS Data by location
 ---------------------------------------
 Description: 
 
-Format(s): .csv, .xlsx
+Format(s): .csv
 
--computer_internet_vehicles.csv: Census Tracts as column names, rows as count data for the variables below (stratified by level), more variables than needed just in case. This is a compiled dataset from where we are pulling individual variables and cleaning separately.
+-vehicles.csv: Census Tracts as column names, rows as count data for the variables below (stratified by level), more variables than needed just in case. This is a compiled dataset from where we are pulling individual variables and cleaning separately.
 		
 		Relevant Sections:
- 		 * COMPUTERS_AND_INTERNET_USE
- 		 * TYPES OF COMPUTER
-  		 * TYPES OF INTERNET SUBSCRIPTION
-		 * VEHICLES AVAILABLE 
+ 		 * 0: Number of households with 0 vehicles available
+		 * 1: Number of households with 1 vehicle available
+		 * 2: Number of households with 2 vehicles available
+		 * 3: Number of households with 3 or more vehicles available
+		 * Total: Total number of households per Census Tract
 -c_t_sheet_1.csv: Alachua County Census Tracts as row names, columns for counts of the foreign-born population per tract (separated by the continent of origin for the foreign-born people)
 		
 		Relevant Variables:
@@ -67,28 +69,48 @@ Format(s): .csv, .xlsx
 		* FB: total foreign-born population of the corresponding tract
 		* FB_Nat: total naturalized foreign-born population of the corresponding tract
 		* FB_NC: total non citizen foreign-born population of the corresponding tract
--foreign_born_zip_codes.csv: Variables as row names and columns as the ZCTA values of Gainesville, excluding the UF ZIP codes
-		
+-prop_computer_internet_household.csv: Columns are Census Tracts, Total Number of Households, Number of Households with Computer, Number of Households with Broadband Access, Proportion of Households with a Computer, Proportion of Households with Broadband Access (not separated by Foreign Born/Native)
+
 		Relevant Variables:
-		* Europe: total foreign-born population in the corresponding ZCTA originally 
-		from Europe
-		* Latin_America: total foreign-born population in the corresponding ZCTA 
-		originally from Latin America
-		*Asia: total foreign-born population in the corresponding ZCTA 
-		originally from Latin America
-		*Other: total foreign-born population in the corresponding ZCTA 
-		originally from Africa, Oceana, or North America
--internet_coverage_zip_codes.csv: Variables are Zip Code and Percent Internet Coverage as columns
-		
+		* Total_households: Total Number of Households
+		* With_a_computer: Number of Households with Computer
+		* With_a_broadband: Number of Households with Broadband Access
+		* prop_computer: Proportion of Households with a Computer
+		* prop_broadband: Proportion of Households with Broadband Access
+-with_mortgage.csv: Alachua County Census Tracts as column names, rows for percentages of owner occupied units with a mortgage (not separated by Foreign Born/Native)
+
 		Relevant Variables:
-		*Zip Code: There are 10 ZIP codes listed, for the 10 ZTCA values of Gainesville, excluding UF
-		*Percent Internet Coverage: This is the percentage of households in the corresponding ZCTA that have an internet subscription or have internet access 
--computer_broadband.xlsx: Columns are Census Tracts in all of Alachua County, not just Gainesville CCD, and it tells us the number of households, the number of households with a computer, and the number of households with an internet subscription
-		
+		* Housing units with a mortgage (excluding units where SMOCAPI cannot be computed): Total Units with a Mortgage
+		* value_1: < 20% with a mortgage
+		* value_2: 20-24.9% with a mortgage
+		* value_3: 25-29.9% with a mortgage
+		* value_4: 30-34.9% with a mortgage
+		* value_5: > 35% with a mortgage
+		* value_6: not computed
+
+
+-no_mortgage.csv: Alachua County Census Tracts as column names, rows for percentages of owner occupied units without a mortgage (not separated by Foreign Born/Native)
+
 		Relevant Variables:
-		*Total_households: The total number of households in the corresponding Census tract
-		*With_a_computer: The total number of households in the corresponding Census tract with at least one computer
-		*With_a_broadband_Internet_subscription:  The total number of households in the corresponding Census tract with a broadband Internet subscription
+		* value_1: < 10% without a mortgage
+		* value_2: 10-14.9% without a mortgage
+		* value_3: 15-19.9% without a mortgage
+		* value_4: 20-24.9% without a mortgage
+		* value_5: 25-29.9% without a mortgage
+		* value_6: 30-34.9% without a mortgage
+		* value_7: > 35% without a mortgage
+		* value_8: not computed
+
+-newhousingdata.csv: Alachua County Census Tracts as column names, rows for percentages of rent cost per household income (not separated by Foreign Born/Native)
+
+		Relevant Variables:
+		* value_1: < 15% total income
+		* value_2: 15-19% total income
+		* value_3: 20-24% total income
+		* value_4: 25-29% total income
+		* value_5: 30-34% total income
+		* value_6: > 35% total income
+		* value_7: not computed
 
 Details for ii) R Scripts
 ---------------------------------------
@@ -118,13 +140,13 @@ These files include data for the map to have features such as locations (for lib
 Sharing/Access information
 ======================
 
-Data on digital access was extracted from the following sources:
+Data on digital access and households were extracted from the following sources:
 - https://data.census.gov/table?q=s2504&g=050XX00US12001$1400000
 - https://data.census.gov/table?q=S2801&g=050XX00US12001$1400000
 - https://data.census.gov/table?t=Foreign-Born:Telephone,+Computer,+and+Internet+Access&g=050XX00US12001$1400000
 - https://data.census.gov/table?q=B05002&g=050XX00US12001$1400000
-- https://bestneighborhood.org/tv-and-internet-gainesville-fl/
-- https://data.census.gov/table?q=B05002&g=860XX00US32601,32603,32605,32606,32607,32608,32609,32641,32653,32669
+- https://data.census.gov/table?q=B05002:+Place+of+Birth+by+Nativity+and+Citizenship+Status&g=050XX00US12001$1400000
+- https://data.census.gov/table?q=DP04:+Selected+Housing+Characteristics&g=050XX00US12001$1400000
 
 Data on geographical features was extracted from the following sources:
 - https://catalog.data.gov/dataset/tiger-line-shapefile-2020-state-florida-census-tracts
@@ -133,6 +155,7 @@ Data on geographical features was extracted from the following sources:
 - https://go-rts.com/rts-data/
 - https://experience.arcgis.com/experience/23f2a92f6f814f94b919a6e964233329
 - https://fgdl.org/zips/metadata/xml/par_citylm_2021.xml
+- GIS Specialist Juan Villa via the Department of Sustainable Development at the City of Gainesville
 
 ## Code Software
 ======================
