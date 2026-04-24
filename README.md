@@ -3,11 +3,9 @@ Team 3 Digital Access Datasets
 - - - 
 The data we are using includes foreign born populations, computer ownership, internet subscriptions, bus routes, and vehicles per household, to name a few. We downloaded various .csv files from the Census Bureau and then cleaned the data by changing variable names, removing redundant columns, consolidating multiple reports into one data set, and confirming all geographical identifications are consistent. The data we cleaned was filtered by Alachua County census tracts with the exception of internet access which was converted to zip codes of Gainesville City. 
 
-Currently, we are using these data sets to run T-tests in R. Our hope is to determine if there are any significant differences of the internet access between the various census tracts. This conclusion, along with the foreign born population data in each census tract, will give us insight into if there are possible underlying issues with respect to these themes. 
+We produced our first prototype of an interactive map, using the cleaned data sets, which layered bus routes with foreign born population by census tracts. After doing some research on the resources that were available to Gainesville residents, we decided to include library locations on this map. We noticed from this inclusion that the Millhopper Branch, which has the most foot traffic, was located in areas densely populated by foreign-born residents. Our map, titled “Gainesville Comprehensive Map”, includes toggle options for bus routes, bus stops, libraries, and city commission districts. The layers include Foreign Born Population (FB), % of Households w/ at Least One Vehicle, Computer Access & Broadband, Gross Rent as a % of Household Income, % Units with No Mortgage, and % Units with Mortgage. All layers are choropleth maps where the darker colors represent a higher density of populations/percentages of households, with the exception of the computer access which is denoted with hatching density.
 
-We produced our first prototype of an interactive map, using the cleaned data sets, which layered bus routes with foreign born population by census tracts. After doing some research on the resources that were available to Gainesville residents, we decided to include library locations on this map. We noticed from this inclusion that the Millhopper Branch, which has the most foot traffic, was located in areas densely populated by foreign-born residents. Our map, titled “Comprehensive Gainesville Map”, includes toggle options for bus routes + spots, libraries, city limits, populations, and census tracts. We expect to add elements to reflect vehicles per household and potentially computer access  We created this visualization using existing shapefiles and trajectories taken from both the City of Gainesville official website and the U.S. Census Bureau.
-
-All analyses were conducted in R and all visualizations were created in Google Colab, using mostly Python, but also some HTML and JavaScript. The file "proportion_of_households_with_computers_per_tract.Rmd" includes all code required to replicate our analyses, "internet_access_zip_code.ipynp" includes the code to replicate the internet_coverage.html map, and "gainesville_comprehensive_map.ipynb" includes the code to replicate the comprehensive_gnv_map.html map.
+All visualizations are reproducible in Google Colab, using mostly Python, but also some HTML and JavaScript. The file "current_gnv_comprehensive_map_code.ipynb" includes the code to replicate the current_gnv_comprehensive_map.html output, created with assistance from Anthropic's LLM.
 - - -
 Data and File Overview
 ======================
@@ -23,30 +21,25 @@ i)  U. S. Census Bureau/ACS Data by location
 - no_mortgage.csv
 - newhousingdata.csv
 
-ii) R Scripts
-- proportion_of_households_with_computers_per_tract.Rmd
-- proportions_for_computers_and_internet_access_for_household_per_tract.Rmd
-
-iii) Google Colab Scripts
+ii) Google Colab Scripts
 - current_gnv_comp_map.ipynb
   
-iv) HTML Scripts (Maps)
+iii) HTML Scripts (Maps)
 - current_gnv_comprehensive_map.html
 
-v) Geographical Files
+iv) Geographical Files
 - aclib.csv
 - tl_2020_12_tract.dbf
 - tl_2020_12_tract.shp
 - layer_0_20260128.csv
-- PlanningTest_DBO_MunicipalBoundary_data_20260128.csv
 - Random.shp
 - Random.dbf
 - Spring2026_Weekday.shp
 - Spring2026_Weekday.dbf
 - par_citylm_2021.shp
 - par_citylm_2021.dbf
-- city_commission_district.shp
-- city_commission_district.dbf
+- City_Commission_District_Export.shp
+- City_Commission_District_Export.dbf
 
 Details for i) U. S. Census Bureau/ACS Data by location
 ---------------------------------------
@@ -88,7 +81,6 @@ Format(s): .csv
 		* value_5: > 35% with a mortgage
 		* value_6: not computed
 
-
 -no_mortgage.csv: Alachua County Census Tracts as column names, rows for percentages of owner occupied units without a mortgage (not separated by Foreign Born/Native)
 
 		Relevant Variables:
@@ -112,27 +104,21 @@ Format(s): .csv
 		* value_6: > 35% total income
 		* value_7: not computed
 
-Details for ii) R Scripts
----------------------------------------
-Includes the R-code to run Bonferroni tests for significant differences, ANOVA, and a logistic regression. These files have the codes to our current exploratory data analyses, finding significant differences between tracts using a Bonferroni method. This is currently in progress, and we will update this file to provide the most accurate analyses it has completed.
-
-*Format(s): .Rmd
-  
-Details for iii) Google Colab Scripts
+Details for ii) Google Colab Scripts
 ---------------------------------------
 Includes the Python, JavaScript, and HTML code to replicate the maps of Gainesville.
 
 *Format(s): .ipynb
 
-Details for iv) HTML Scripts (Maps)
+Details for iii) HTML Scripts (Maps)
 ---------------------------------------
 The Python code outputs HTML maps.
 
 *Format(s): .html
 
-Details for v) Geographical Files
+Details for iv) Geographical Files
 ---------------------------------------
-These files include data for the map to have features such as locations (for libraries), Gainesville city borders, Census Tract borders, ZIP Code Tabulation Areas, RTS bus routes, and RTS bus stops.
+These files include data for the map to have features such as locations (for libraries), Gainesville city borders, Gainesville City Commission Districts, Census tract borders, RTS bus routes, and RTS bus stops.
 
 *Format(s): .csv, .cpg, .dbf, .prj, .sbn, .sbx, .shp, shp.xml, .shx
 
@@ -158,14 +144,6 @@ Data on geographical features was extracted from the following sources:
 
 ## Code Software
 ======================
-
-Code is provided for R version 4.5.1 (2025-06-13)
-
-- Package ‘readxl’ version 1.4.5
-- Package ‘tidyr’ version 1.3.1
-- Package ‘stringr’ version 1.5.2
-- Package ‘dplyr’ version 1.5.2
-- Package ‘emmeans’ version 2.0.1
 
 Code is provided for Python version 3.12.12
 
